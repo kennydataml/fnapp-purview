@@ -13,10 +13,13 @@ Just open up the link in your local browser
 ## deploying function app
 assuming you're using visual studio code, install the Azure Functions extension and ensure your local project shows up. Then hit the cloud button at the top of the menu to deploy to your function app.
 Ensure you select Authorization level as `Anonymous`: https://stackoverflow.com/questions/51130370/when-i-am-running-azure-http-trigger-function-i-am-getting-401-unauthorized/53981032
-# authentication to purview
+
+You can do this by navigating to `function.json` file and changing `authLevel` to anonymous.
+# purview
+## authentication to purview
 we use pyapacheatlas to get the headers with bearer token: https://github.com/wjohnson/pyapacheatlas/blob/master/pyapacheatlas/auth/serviceprincipal.py#L50
 
-# purview run scan
+## purview run scan
 msft docs are not updated: https://docs.microsoft.com/en-us/rest/api/purview/scanningdataplane/scan-result/run-scan  
 issue was open on purviewcli and resolved: https://github.com/tayganr/purviewcli/issues/14  
 resolution was the runScan is now a `POST` without runId
