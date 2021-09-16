@@ -1,0 +1,30 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+# we are using this for authentication
+pyapacheatlas
+requests
+jmespath
+
+# extra libs from original purview fnapp
+azure-core==1.18.0
+azure-identity==1.6.1
+certifi==2021.5.30
+cffi==1.14.6
+charset-normalizer==2.0.4
+cryptography==3.4.8
+docopt==0.6.2
+et-xmlfile==1.1.0
+idna==3.2
+msal==1.14.0
+msal-extensions==0.3.0
+openpyxl==3.0.8
+portalocker==1.7.1
+purviewcli==0.1.33
+pycparser==2.20
+PyJWT==2.1.0
+six==1.16.0
+urllib3==1.26.6
+uuid==1.30
